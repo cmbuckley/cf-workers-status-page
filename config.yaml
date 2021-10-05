@@ -15,7 +15,33 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: cmbuckley-co-uk # unique identifier
+  - id: cmbuckley-co-uk
     name: cmbuckley.co.uk
-    description: 'My GitHub page'
     url: 'https://cmbuckley.co.uk/'
+  - id: bux-re
+    name: bux.re
+    url: 'https://bux.re'
+  - id: emilia-chris-wedding
+    name: emilia-chris.wedding
+    url: 'https://emilia-chris.wedding'
+  - id: starsquare-co-uk
+    name: starsquare.co.uk
+    url: 'https://starsquare.co.uk'
+  - id: icorrect-it
+    name: icorrect.it
+    url: 'https://icorrect.it'
+  - id: emilia-buckley-name
+    name: emilia.buckley.name
+    url: 'https://emilia.buckley.name'
+  - id: misterf-co-uk
+    name: misterf.co.uk
+    url: 'https://misterf.co.uk'
+  - id: rfchildcareleeds-co-uk
+    name: rfchildcareleeds.co.uk
+    url: 'https://rfchildcareleeds.co.uk'
+  - id: thesparesshop-co-uk
+    name: thesparesshop.co.uk
+    url: 'https://thesparesshop.co.uk'
+  - id: yorkstudenthomes-com
+    name: yorkstudenthomes.com
+    url: 'https://yorkstudenthomes.com'
