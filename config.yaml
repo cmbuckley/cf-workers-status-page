@@ -31,6 +31,9 @@ monitors:
   - id: starsquare-co-uk
     name: starsquare.co.uk
     url: 'https://starsquare.co.uk'
+  - id: pictures-scholesmafia-co-uk
+    name: pictures.scholesmafia.co.uk
+    url: 'https://pictures.scholesmafia.co.uk'
   - id: vistaverde-network
     name: vistaverde.network
     url: 'https://vistaverde.network/cdn-cgi/trace'
