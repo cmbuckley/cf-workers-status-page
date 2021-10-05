@@ -18,6 +18,9 @@ monitors:
   - id: cmbuckley-co-uk
     name: cmbuckley.co.uk
     url: 'https://cmbuckley.co.uk/'
+  - id: scripts-cmbuckley-co-uk
+    name: scripts.cmbuckley.co.uk
+    url: 'https://scripts.cmbuckley.co.uk/'
   - id: bux-re
     name: bux.re
     url: 'https://bux.re'
@@ -28,6 +31,9 @@ monitors:
   - id: starsquare-co-uk
     name: starsquare.co.uk
     url: 'https://starsquare.co.uk'
+  - id: vistaverde-network
+    name: vistaverde.network
+    url: 'https://vistaverde.network/cdn-cgi/trace'
   - id: icorrect-it
     name: icorrect.it
     url: 'https://icorrect.it'
