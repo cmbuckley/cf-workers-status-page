@@ -21,6 +21,7 @@ monitors:
   - id: bux-re
     name: bux.re
     url: 'https://bux.re'
+    expectStatus: 302
   - id: emilia-chris-wedding
     name: emilia-chris.wedding
     url: 'https://emilia-chris.wedding'
