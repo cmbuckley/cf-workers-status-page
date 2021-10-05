@@ -12,7 +12,8 @@ settings:
   monitorLabelNoData: 'No data'
   dayInHistogramNoData: 'No data'
   dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  dayInHistogramNotOperational: ' incidents' # xx incidents recorded
+  dayInHistogramNotOperationalOne: ' incident' # 1 incident recorded
 
 monitors:
   - id: cmbuckley-co-uk

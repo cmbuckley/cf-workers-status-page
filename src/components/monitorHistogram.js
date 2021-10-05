@@ -25,7 +25,11 @@ export default function MonitorHistogram({ monitorId, kvMonitor }) {
             kvMonitor.checks[dayInHistogram].fails > 0
           ) {
             bg = 'yellow'
-            dayInHistogramLabel = `${kvMonitor.checks[dayInHistogram].fails} ${config.settings.dayInHistogramNotOperational}`
+            if (kvMonitor.checks[dayInHistogram].fails == 1 && config.settings.dayInHistogramNotOperationalOne) {
+              dayInHistogramLabel = `${kvMonitor.checks[dayInHistogram].fails} ${config.settings.dayInHistogramNotOperationalOne}`
+            } else {
+              dayInHistogramLabel = `${kvMonitor.checks[dayInHistogram].fails} ${config.settings.dayInHistogramNotOperational}`
+            }
           } else {
             bg = 'green'
             dayInHistogramLabel = config.settings.dayInHistogramOperational
