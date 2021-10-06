@@ -6,12 +6,12 @@ settings:
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
+  notAllmonitorsOperational: 'Partially Degraded Service'
   monitorLabelOperational: 'Operational'
   monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
+  monitorLabelNoData: 'No Data'
   dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
+  dayInHistogramOperational: 'No incidents'
   dayInHistogramNotOperational: ' incidents' # xx incidents recorded
   dayInHistogramNotOperationalOne: ' incident' # 1 incident recorded
 
