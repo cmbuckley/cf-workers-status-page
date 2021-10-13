@@ -38,6 +38,7 @@ export async function processCronTrigger(event) {
     try {
       auths = JSON.parse(SECRET_HTTP_AUTH)
     } catch (err) {
+      console.error(`Error parsing auth JSON: ${err}`)
     }
   }
 
@@ -62,6 +63,8 @@ export async function processCronTrigger(event) {
       },
     }
 
+    console.debug(`${init.method} ${monitor.url}`);
+
     if (auths[monitor.id]) {
       if (auths[monitor.id].username) {
         init.headers.Authorization = 'Basic ' +
@@ -82,6 +85,8 @@ export async function processCronTrigger(event) {
     const monitorStatusChanged =
       monitorsState.monitors[monitor.id].lastCheck.operational !==
       monitorOperational
+
+    console.log(`Response from ${monitor.name}: ${checkResponse.status} ${checkResponse.statusText}`)
 
     // Save monitor's last check response status
     monitorsState.monitors[monitor.id].lastCheck = {
