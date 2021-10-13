@@ -42,6 +42,7 @@ jobs:
           SECRET_TELEGRAM_API_TOKEN
           SECRET_TELEGRAM_CHAT_ID
           SECRET_DISCORD_WEBHOOK_URL
+          SECRET_HTTP_AUTH
         environment: production
       env:
         CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
@@ -49,3 +50,4 @@ jobs:
         SECRET_TELEGRAM_API_TOKEN: ${{secrets.SECRET_TELEGRAM_API_TOKEN}}
         SECRET_TELEGRAM_CHAT_ID: ${{secrets.SECRET_TELEGRAM_CHAT_ID}}
         SECRET_DISCORD_WEBHOOK_URL: ${{secrets.SECRET_DISCORD_WEBHOOK_URL}}
+        SECRET_HTTP_AUTH: ${{secrets.SECRET_HTTP_AUTH}}

@@ -29,6 +29,17 @@ export async function processCronTrigger(event) {
   // Reset default all monitors state to true
   monitorsState.lastUpdate.allOperational = true
 
+  // list of auth credentials
+  let auths = {}
+
+  // parse the auth secret
+  if (typeof SECRET_HTTP_AUTH !== 'undefined') {
+    try {
+      auths = JSON.parse(SECRET_HTTP_AUTH)
+    } catch (err) {
+    }
+  }
+
   for (const monitor of config.monitors) {
     // Create default monitor state if does not exist yet
     if (typeof monitorsState.monitors[monitor.id] === 'undefined') {
@@ -48,6 +59,15 @@ export async function processCronTrigger(event) {
       headers: {
         'User-Agent': config.settings.user_agent || 'cf-worker-status-page',
       },
+    }
+
+    if (auths[monitor.id]) {
+      if (auths[monitor.id].username) {
+        init.headers.Authorization = 'Basic ' +
+          Buffer.from(auths[monitor.id].username + ':' + auths[monitor.id].password).toString('base64')
+      } else {
+        init.headers.Authorization = auths[monitor.id]
+      }
     }
 
     // Perform a check and measure time
