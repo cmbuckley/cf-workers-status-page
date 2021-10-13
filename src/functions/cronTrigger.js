@@ -1,4 +1,5 @@
 import config from '../../config.yaml'
+import { version } from '../../package.json'
 
 import {
   notifySlack,
@@ -57,7 +58,7 @@ export async function processCronTrigger(event) {
       method: monitor.method || 'GET',
       redirect: monitor.followRedirect ? 'follow' : 'manual',
       headers: {
-        'User-Agent': config.settings.user_agent || 'cf-worker-status-page',
+        'User-Agent': config.settings.user_agent || 'cf-worker-status-page/' + version,
       },
     }
 
