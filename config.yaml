@@ -37,7 +37,7 @@ monitors:
     url: 'https://pictures.scholesmafia.co.uk'
   - id: vistaverde-network
     name: vistaverde.network
-    url: 'https://vistaverde.network'
+    url: 'https://vistaverde.network:8443'
   - id: icorrect-it
     name: icorrect.it
     url: 'https://icorrect.it'
