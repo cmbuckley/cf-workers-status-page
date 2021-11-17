@@ -38,6 +38,9 @@ monitors:
   - id: vistaverde-network
     name: vistaverde.network
     url: 'https://vistaverde.network:8443'
+  - id: proxy-vistaverde-network
+    name: proxy.vistaverde.network
+    url: 'https://proxy.vistaverde.network:8443'
   - id: icorrect-it
     name: icorrect.it
     url: 'https://icorrect.it'
