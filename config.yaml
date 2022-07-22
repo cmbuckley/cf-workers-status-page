@@ -27,8 +27,8 @@ monitors:
     url: 'https://bux.re'
     expectStatus: 302
   - id: emilia-chris-wedding
-    name: emilia-chris.wedding
-    url: 'https://emilia-chris.wedding'
+    name: emilia-chris-wedding.starsquare.co.uk
+    url: 'https://emilia-chris-wedding.starsquare.co.uk'
   - id: starsquare-co-uk
     name: starsquare.co.uk
     url: 'https://starsquare.co.uk'
