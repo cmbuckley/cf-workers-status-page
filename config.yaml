@@ -16,46 +16,49 @@ settings:
   dayInHistogramNotOperationalOne: ' incident' # 1 incident recorded
 
 monitors:
-  - id: cmbuckley-co-uk
-    name: cmbuckley.co.uk
-    url: 'https://cmbuckley.co.uk/'
-  - id: scripts-cmbuckley-co-uk
-    name: scripts.cmbuckley.co.uk
-    url: 'https://scripts.cmbuckley.co.uk/'
   - id: bux-re
     name: bux.re
     url: 'https://bux.re'
     expectStatus: 302
-  - id: emilia-chris-wedding
-    name: emilia-chris-wedding.starsquare.co.uk
-    url: 'https://emilia-chris-wedding.starsquare.co.uk'
-  - id: starsquare-co-uk
-    name: starsquare.co.uk
-    url: 'https://starsquare.co.uk'
-  - id: pictures-scholesmafia-co-uk
-    name: pictures.scholesmafia.co.uk
-    url: 'https://pictures.scholesmafia.co.uk'
-  - id: vistaverde-network
-    name: vistaverde.network
-    url: 'https://vistaverde.network:8443'
-  - id: proxy-vistaverde-network
-    name: proxy.vistaverde.network
-    url: 'https://proxy.vistaverde.network:8443'
-  - id: icorrect-it
-    name: icorrect.it
-    url: 'https://icorrect.it'
+  - id: cmbuckley-co-uk
+    name: cmbuckley.co.uk
+    url: 'https://cmbuckley.co.uk/'
   - id: emilia-buckley-name
     name: emilia.buckley.name
     url: 'https://emilia.buckley.name'
+  - id: emilia-chris-wedding
+    name: emilia-chris-wedding.starsquare.co.uk
+    url: 'https://emilia-chris-wedding.starsquare.co.uk'
+  - id: icorrect-it
+    name: icorrect.it
+    url: 'https://icorrect.it'
   - id: misterf-co-uk
     name: misterf.co.uk
     url: 'https://misterf.co.uk'
+  - id: pictures-scholesmafia-co-uk
+    name: pictures.scholesmafia.co.uk
+    url: 'https://pictures.scholesmafia.co.uk'
+  - id: proxy-vistaverde-network
+    name: proxy.vistaverde.network
+    url: 'https://proxy.vistaverde.network:8443'
   - id: rfchildcareleeds-co-uk
     name: rfchildcareleeds.co.uk
     url: 'https://rfchildcareleeds.co.uk'
+  - id: setcookie-net
+    name: setcookie.net
+    url: 'https://setcookie.net/'
+  - id: scripts-cmbuckley-co-uk
+    name: scripts.cmbuckley.co.uk
+    url: 'https://scripts.cmbuckley.co.uk/'
+  - id: starsquare-co-uk
+    name: starsquare.co.uk
+    url: 'https://starsquare.co.uk'
   - id: thesparesshop-co-uk
     name: thesparesshop.co.uk
     url: 'https://thesparesshop.co.uk'
+  - id: vistaverde-network
+    name: vistaverde.network
+    url: 'https://vistaverde.network:8443'
   - id: yorkstudenthomes-com
     name: yorkstudenthomes.com
     url: 'https://yorkstudenthomes.com'
