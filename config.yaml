@@ -38,9 +38,6 @@ monitors:
   - id: pictures-scholesmafia-co-uk
     name: pictures.scholesmafia.co.uk
     url: 'https://pictures.scholesmafia.co.uk'
-  - id: proxy-vistaverde-network
-    name: proxy.vistaverde.network
-    url: 'https://proxy.vistaverde.network:8443'
   - id: rfchildcareleeds-co-uk
     name: rfchildcareleeds.co.uk
     url: 'https://rfchildcareleeds.co.uk'
@@ -56,9 +53,9 @@ monitors:
   - id: thesparesshop-co-uk
     name: thesparesshop.co.uk
     url: 'https://thesparesshop.co.uk'
-  - id: vistaverde-network
-    name: vistaverde.network
-    url: 'https://vistaverde.network:8443'
+  - id: vistaverde-network-home-assistant
+    name: Home Assistant
+    url: 'https://vistaverde.network'
   - id: yorkstudenthomes-com
     name: yorkstudenthomes.com
     url: 'https://yorkstudenthomes.com'
