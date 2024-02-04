@@ -55,7 +55,7 @@ monitors:
     url: 'https://thesparesshop.co.uk'
   - id: vistaverde-network-home-assistant
     name: Home Assistant
-    url: 'https://vistaverde.network'
+    url: 'https://pi.vistaverde.network'
   - id: yorkstudenthomes-com
     name: yorkstudenthomes.com
     url: 'https://yorkstudenthomes.com'
