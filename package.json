@@ -18,7 +18,8 @@
     "laco": "^1.2.1",
     "laco-react": "^1.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "wrangler": "^3.26.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.2",
