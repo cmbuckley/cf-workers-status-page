@@ -35,7 +35,7 @@ jobs:
           wrangler $(echo whoami)
           export KV_NAMESPACE_ID=$(yarn --silent wrangler kv:namespace list | jq -r 'map(select(.title | contains("KV_STATUS_PAGE")))[0].id')
           echo "KV: [$KV_NAMESPACE_ID]"
-          [ -z "$KV_NAMESPACE_ID" ] && echo "Creating KV namespace" && yarn wrangler kv:namespace create KV_STATUS_PAGE
+          [ -z "$KV_NAMESPACE_ID" ] && echo "Creating KV namespace" && yarn wrangler kv:namespace create KV_STATUS_PAGE || true
           export KV_NAMESPACE_ID=$(yarn --silent wrangler kv:namespace list | jq -r 'map(select(.title | contains("KV_STATUS_PAGE")))[0].id')
           echo "[env.production]" >> wrangler.toml
           echo "kv_namespaces = [{binding=\"KV_STATUS_PAGE\", id=\"${KV_NAMESPACE_ID}\"}]" >> wrangler.toml
