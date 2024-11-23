@@ -29,7 +29,8 @@ jobs:
         accountId: ${{ secrets.CF_ACCOUNT_ID }}
         preCommands: |
           wrangler kv:namespace create KV_STATUS_PAGE || true
-          echo "[env.production]\n" >> wrangler.toml
+          echo '[env.production]' >> wrangler.toml
+          echo "define = { global = \"globalThis\" }\n" >> wrangler.toml
           echo '  [[env.production.kv_namespaces]]' >> wrangler.toml
           echo '  binding = "KV_STATUS_PAGE"' >> wrangler.toml
           echo "  id = \"$(npx wrangler kv:namespace list | node -pe "JSON.parse(fs.readFileSync('/dev/stdin').toString()).find(kv => kv.title.includes('KV_STATUS_PAGE')).id")\"" >> wrangler.toml
