@@ -3,6 +3,11 @@ workers_dev = true
 compatibility_date = "2021-10-05"
 main = "index.js"
 
+[[rules]]
+type = "Data"
+globs = ["**/*.yml", "**/*.yaml"]
+fallthrough = true
+
 [triggers]
 crons = ["*/5 * * * *"]
 
