@@ -32,7 +32,7 @@ jobs:
           echo "[env.production]\n" >> wrangler.toml
           echo '  [[env.production.kv_namespaces]]' >> wrangler.toml
           echo '  binding = "KV_STATUS_PAGE"' >> wrangler.toml
-          echo "  id = \"$(wrangler kv:namespace list | node -pe "JSON.parse(fs.readFileSync('/dev/stdin').toString()).find(kv => kv.title.includes('KV_STATUS_PAGE')).id")\"" >> wrangler.toml
+          echo "  id = \"$(npx wrangler kv:namespace list | node -pe "JSON.parse(fs.readFileSync('/dev/stdin').toString()).find(kv => kv.title.includes('KV_STATUS_PAGE')).id")\"" >> wrangler.toml
 
           [ -z "$SECRET_SLACK_WEBHOOK_URL" ] && echo "Secret SECRET_SLACK_WEBHOOK_URL not set, creating dummy one..." && SECRET_SLACK_WEBHOOK_URL="default-gh-action-secret" || true
           [ -z "$SECRET_TELEGRAM_API_TOKEN" ] && echo "Secret SECRET_TELEGRAM_API_TOKEN not set, creating dummy one..." && SECRET_TELEGRAM_API_TOKEN="default-gh-action-secret" || true
